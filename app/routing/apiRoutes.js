@@ -6,15 +6,10 @@ module.exports = function(app) {
     res.json(friendsData);
   });
 
-  app.post("/api/matches", function(req, res) {
-   //modify to create the modal pop-up 
-    if (tableData.length < 5) {
-      tableData.push(req.body);
+  app.post("/api/friends", function(req, res) {
+    
+      friendsData.push(req.body);
       res.json(true);
-    }
-    else {
-      waitListData.push(req.body);
-      res.json(false);
-    }
-  });
+    
+    });
 };
