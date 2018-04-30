@@ -1,14 +1,20 @@
 var friendsData = require("../data/friends");
 
 module.exports = function(app) {
-  // API GET Requests
-  // Below code handles when users "visit" a page.
-  // In each of the below cases when a user visits a link
-  // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-  // ---------------------------------------------------------------------------
 
   app.get("/api/friends", function(req, res) {
     res.json(friendsData);
   });
 
+  app.post("/api/matches", function(req, res) {
+   //modify to create the modal pop-up 
+    if (tableData.length < 5) {
+      tableData.push(req.body);
+      res.json(true);
+    }
+    else {
+      waitListData.push(req.body);
+      res.json(false);
+    }
+  });
 };

@@ -6,10 +6,177 @@
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
 
 </head>
 <body>
-    Testing Survey Page
+    <div class="container">
+        <h3>Survey Questions</h3>
+        <hr>
+        <h2>About You</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name (Required)</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="image">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="imageURL" placeholder="Enter link to photo">
+  
+            </div>
+            <hr>
+            <div class="form-group"> 
+            <div class="question">
+                <h4>Question 1</h4>
+                <p>Enter text for question here</p>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h4>Question 2</h4>
+                <p>Enter text for question here</p>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h4>Question 3</h4>
+                <p>Enter text for question here</p>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h4>Question 4</h4>
+                <p>Enter text for question here</p>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+            </div>
+            <div class="question">
+                <h4>Question 5</h4>
+                <p>Enter text for question here</p>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+            </div>
+            <div class="question">
+                <h4>Question 6</h4>
+                <p>Enter text for question here</p>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+            </div>
+            <div class="question">
+                <h4>Question 7</h4>
+                <p>Enter text for question here</p>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+            </div>
+            <div class="question">
+                <h4>Question 8</h4>
+                <p>Enter text for question here</p>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+            </div>
+            <div class="question">
+                <h4>Question 9</h4>
+                <p>Enter text for question here</p>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+            </div>
+            <div class="question">
+                <h4>Question 10</h4>
+                <p>Enter text for question here</p>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select an Option <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
+                </button>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">1 (Strongly Disagree)</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5 (Strongly Agree)</a></li>
+                    </div>
+            </div> 
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+        </form>
+    </div>
 </body>
 </html>
