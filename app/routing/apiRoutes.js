@@ -7,7 +7,7 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
-    
+      console.log("testing post route");  
       friendsData.push(req.body);
       res.json(true);
     

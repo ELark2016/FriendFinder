@@ -30,7 +30,7 @@
             <div class="form-group"> 
                 <div class="question">
                         <h4>Question 1</h4>
-                        <p>Enter text for question here</p>
+                        <p>I prefer warm weather</p>
                     <div>
                         <select class="custom-select" id="q1">
                                 <option value="">Select an Option</option>    
@@ -44,7 +44,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 2</h4>
-                        <p>Enter text for question here</p>
+                        <p>I prefer cold weather</p>
                     <div>
                         <select class="custom-select" id="q2">
                                 <option value="">Select an Option</option>    
@@ -58,7 +58,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 3</h4>
-                        <p>Enter text for question here</p>
+                        <p>I like to vacation at/near the beach</p>
                     <div>
                         <select class="custom-select" id="q3">
                                 <option value="">Select an Option</option>    
@@ -72,7 +72,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 4</h4>
-                        <p>Enter text for question here</p>
+                        <p>I like to vacation at/near the mountains</p>
                     <div>
                         <select class="custom-select" id="q4">
                                 <option value="">Select an Option</option>    
@@ -86,7 +86,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 5</h4>
-                        <p>Enter text for question here</p>
+                        <p>I prefer high intesity workouts like kickboxing</p>
                     <div>
                         <select class="custom-select" id="q5">
                                 <option value="">Select an Option</option>    
@@ -100,7 +100,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 6</h4>
-                        <p>Enter text for question here</p>
+                        <p>I prefer exercises that are low impact/intensity like pilates</p>
                     <div>
                         <select class="custom-select" id="q6">
                                 <option value="">Select an Option</option>    
@@ -114,7 +114,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 7</h4>
-                        <p>Enter text for question here</p>
+                        <p>I prefer comedies over sad movies</p>
                     <div>
                         <select class="custom-select" id="q7">
                                 <option value="">Select an Option</option>    
@@ -128,7 +128,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 8</h4>
-                        <p>Enter text for question here</p>
+                        <p>I prefer action movies over dramas</p>
                     <div>
                         <select class="custom-select" id="q8">
                                 <option value="">Select an Option</option>    
@@ -142,7 +142,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 9</h4>
-                        <p>Enter text for question here</p>
+                        <p>I love live music</p>
                     <div>
                         <select class="custom-select" id="q9">
                                 <option value="">Select an Option</option>    
@@ -156,7 +156,7 @@
                 </div>
                 <div class="question">
                         <h4>Question 10</h4>
-                        <p>Enter text for question here</p>
+                        <p>I like to go to plays</p>
                     <div>
                         <select class="custom-select" id="q10">
                                 <option value="">Select an Option</option>    
@@ -169,7 +169,7 @@
                     </div>
                 </div>  
             </div>
-            <button type="submit" class="btn btn-primary" id="submit"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+            <button type="button" class="btn btn-primary" id="submit"><span class="glyphicon glyphicon-ok"></span> Submit</button>
         </form>
         <!-- Modal -->
     <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -203,8 +203,9 @@
     // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
 
 
-    $(".submit").on("click", function(event) {
+    $("#submit").on("click", function(event) {
       event.preventDefault();
+      console.log ("Button has been clicked");
 
       // Here we grab the form elements
       var newFriend = {
@@ -226,8 +227,8 @@
 
         console.log(newFriend);
 
-      //$('#friendModal').modal('show')
-        $.post("../api/friends", newFriend, function(data) {
+      $('#friendModal').modal('show')
+        $.post("/api/friends", newFriend, function(data) {
             console.log(data);
             
         });
